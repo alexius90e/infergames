@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infergames</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container"></div>
+    </header>
+
+    <main class="main">
+      <section class="game-search">
+        <div class="container">
+          <div class="game-search__wrapper">
+            <div class="game-search__title">Поиск игр из игротеки:</div>
+
+            <div class="game-search__links">
+              <a class="game-search__links-link" href="#">Все игры</a>
+            </div>
+
+            <div class="custom-select" data-value="1">
+              <select>
+                <option value="1">По алфавиту</option>
+                <option value="2">По популярности</option>
+                <option value="3">Возрастанию цены</option>
+                <option value="4">Убыванию цены</option>
+              </select>
+            </div>
+
+            <div class="custom-select" data-value="1">
+              <select>
+                <option value="1">По жанру</option>
+                <option value="2">По категории</option>
+                <option value="3">По разработчику</option>
+                <option value="4">По издателю</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>
