@@ -1,0 +1,30 @@
+.game-heading {
+  margin: 14px 0 32px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 133%;
+    color: #222;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    &-item {
+      display: inline-block;
+      height: 28px;
+      width: 28px;
+      background: url(../assets/diskette.svg) center no-repeat;
+    }
+  }
+}

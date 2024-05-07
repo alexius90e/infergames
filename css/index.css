@@ -196,3 +196,30 @@ img {
 .breadcrumbs__list-item-link {
   color: #4d4d4d;
 }
+
+.game-heading {
+  margin: 14px 0 32px;
+}
+.game-heading__content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.game-heading__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 133%;
+  color: #222;
+}
+.game-heading__icons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.game-heading__icons-item {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  background: url(../assets/diskette.svg) center no-repeat;
+}
