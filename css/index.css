@@ -166,3 +166,33 @@ img {
 .game-search__links-link {
   color: #222;
 }
+
+.breadcrumbs {
+  margin: 42px 0 14px;
+}
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs__list-item {
+  display: flex;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #4d4d4d;
+}
+.breadcrumbs__list-item::after {
+  content: "/";
+  display: inline-block;
+}
+.breadcrumbs__list-item:last-child::after {
+  display: none;
+}
+.breadcrumbs__list-item-link {
+  color: #4d4d4d;
+}
