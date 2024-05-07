@@ -223,3 +223,39 @@ img {
   width: 28px;
   background: url(../assets/diskette.svg) center no-repeat;
 }
+
+.game-info {
+  margin: 32px 0 44px;
+}
+.game-info .container {
+  display: flex;
+  gap: 29px;
+}
+.game-info__content {
+  flex: 1 1 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+.game-info__sidebar {
+  flex: 0 0 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-sizing: border-box;
+}
+.game-info__sidebar-figure {
+  height: 329px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.game-info__sidebar-figure-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
