@@ -23,10 +23,6 @@ textarea {
   text-decoration: none;
 }
 
-figure {
-  margin: 0;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -233,9 +229,7 @@ img {
 }
 .game-info__content {
   flex: 1 1 auto;
-  padding: 20px;
   box-sizing: border-box;
-  background-color: antiquewhite;
 }
 .game-info__sidebar {
   flex: 0 0 270px;
@@ -258,4 +252,199 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.game-details {
+  display: flex;
+  gap: 29px;
+}
+.game-details__sidebar {
+  flex: 0 0 270px;
+}
+.game-details__sidebar-cover {
+  margin: 0 0 20px;
+}
+.game-details__sidebar-cover-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.game-details__sidebar-user {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 15px;
+  line-height: 147%;
+  font-weight: 400;
+}
+.game-details__sidebar-user-title {
+  font-weight: 600;
+  color: #222;
+}
+.game-details__sidebar-user-text {
+  color: #4d4d4d;
+}
+.game-details__sidebar-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 0 0;
+  margin: 20px 0 0;
+  border-top: 1px solid #cbcbcb;
+}
+.game-details__sidebar-user-info-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.game-details__sidebar-user-info-item::before {
+  content: "";
+  height: 21px;
+  width: 21px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 21px;
+}
+.game-details__sidebar-user-info-item_full:before {
+  background-image: url(../assets/star.svg);
+}
+.game-details__sidebar-user-info-item_approved:before {
+  background-image: url(../assets/approve.svg);
+}
+.game-details__sidebar-user-info-item_notfull:before {
+  background-image: url(../assets/minus.svg);
+}
+.game-details__sidebar-user-info-item_doubtfully:before {
+  background-image: url(../assets/question.svg);
+}
+.game-details__sidebar-user-info-item_tips:before {
+  background-image: url(../assets/tips.svg);
+}
+.game-details__info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.game-details__info-item {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
+.game-details__info-item-title {
+  font-weight: 600;
+  color: #222;
+}
+.game-details__info-item-text {
+  color: #4d4d4d;
+}
+.game-details__info-item-edit {
+  display: inline-block;
+  padding: 0;
+  height: 18px;
+  width: 18px;
+  border: none;
+  border-radius: 4px;
+  background: url(../assets/edit.svg) center no-repeat;
+  background-size: 10px;
+  background-color: #044b96;
+  cursor: pointer;
+}
+.game-details__info-item-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-top: 6px;
+}
+.game-details__info-item-icons-image {
+  height: 35px;
+  width: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.game-details__rarity {
+  flex: 0 0 176px;
+}
+.game-details__rarity-content {
+  display: flex;
+  flex-direction: column;
+}
+.game-details__rarity-content-title {
+  margin: 0 0 6px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 160%;
+  color: #222;
+  text-align: center;
+}
+.game-details__rarity-content-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 140px;
+  margin: 0 auto;
+}
+.game-details__rarity-content-rating-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+}
+.game-details__rarity-content-rating-icon-item {
+  width: 7px;
+  background-color: #c6c6c6;
+}
+.game-details__rarity-content-rating-icon-item:nth-child(1) {
+  height: 12px;
+}
+.game-details__rarity-content-rating-icon-item:nth-child(2) {
+  height: 18px;
+}
+.game-details__rarity-content-rating-icon-item:nth-child(3) {
+  height: 24px;
+}
+.game-details__rarity-content-rating_rare .game-details__rarity-content-rating-icon-item:nth-child(1) {
+  background-color: #1862a9;
+}
+.game-details__rarity-content-rating_normal .game-details__rarity-content-rating-icon-item:nth-child(1), .game-details__rarity-content-rating_normal .game-details__rarity-content-rating-icon-item:nth-child(2) {
+  background-color: #1862a9;
+}
+.game-details__rarity-content-rating_common .game-details__rarity-content-rating-icon-item {
+  background-color: #1862a9;
+}
+.game-details__rarity-content-rating-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  color: #222;
+}
+.game-details__rarity-content-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 7px;
+  margin: 26px 0 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 160%;
+  color: #fff;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #044b96;
+}
+.game-details__rarity-content-tag::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: url(../assets/gamepad.svg) center no-repeat;
+}
+.game-details__rarity-content-tag_exclusive {
+  background-color: #eb5757;
+}
+.game-details__rarity-content-tag_exclusive::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-image: url(../assets/diamond.svg);
 }
