@@ -1,6 +1,7 @@
 .game-details {
   display: flex;
   gap: 29px;
+  margin: 0 0 74px;
 
   &__sidebar {
     flex: 0 0 270px;
@@ -129,10 +130,15 @@
 
   &__rarity {
     flex: 0 0 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 
     &-content {
       display: flex;
       flex-direction: column;
+      width: 100%;
 
       &-title {
         margin: 0 0 6px;
