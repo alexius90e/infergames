@@ -59,3 +59,27 @@ if (accordionDescription) {
     });
   }
 }
+
+const gameCardCovers = document.querySelectorAll('.game-covers__card_cover');
+
+gameCardCovers.forEach((gameCardCover) => {
+  gameCardCover.addEventListener('pointerenter', () => {
+    gameCardCovers.forEach((cover) => cover.classList.add('active'));
+  });
+
+  gameCardCover.addEventListener('pointerleave', () => {
+    gameCardCovers.forEach((cover) => cover.classList.remove('active'));
+  });
+});
+
+const gameCardDiscs = document.querySelectorAll('.game-covers__card_disc');
+
+gameCardDiscs.forEach((gameCardDisc) => {
+  gameCardDisc.addEventListener('pointerenter', () => {
+    gameCardDiscs.forEach((disk) => disk.classList.add('active'));
+  });
+
+  gameCardDisc.addEventListener('pointerleave', () => {
+    gameCardDiscs.forEach((disk) => disk.classList.remove('active'));
+  });
+});

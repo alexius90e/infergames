@@ -641,6 +641,9 @@ img {
 .game-covers__card:hover {
   border-color: #044b96;
 }
+.game-covers__card.active {
+  border-color: #044b96;
+}
 .game-covers__card-title {
   flex: 1 1 auto;
   display: flex;
