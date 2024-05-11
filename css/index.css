@@ -438,6 +438,35 @@ img {
   flex-direction: column;
   gap: 8px;
 }
+.game-details__info-accordion-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin: 5px 0 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  color: #044b96;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.game-details__info-accordion-button::after {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: url(../assets/dropdown.svg) center no-repeat;
+  transition: transform 0.2s ease-out;
+}
+.game-details__info-accordion-button.active::after {
+  transform: rotate(180deg);
+}
+.game-details__info-accordion .game-details__info-item {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 .game-details__info-item {
   font-weight: 400;
   font-size: 15px;
