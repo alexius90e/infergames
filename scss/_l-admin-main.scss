@@ -12,8 +12,39 @@
     border-right: 2px solid #044b96;
   }
 
-
   &__content {
     flex: 1 1 auto;
+    padding: 26px 32px 60px;
+
+    & .breadcrumbs {
+      margin: 0 0 24px;
+    }
+
+    &-nav {
+      display: flex;
+      gap: 10px;
+      margin: 0 -32px 36px 0;
+      border-bottom: 2px solid #044b96;
+
+      &-button {
+        display: inline-block;
+        padding: 9px 24px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 147%;
+        color: #222222;
+        border: 2px solid #044b96;
+        border-bottom: none;
+        border-radius: 5px 5px 0 0;
+        background-color: rgba($color: #ffffff, $alpha: 0);
+        transition: ease-in-out;
+        cursor: pointer;
+
+        &.active, &:hover {
+          color: white;
+          background-color: #044b96;
+        }
+      }
+    }
   }
 }

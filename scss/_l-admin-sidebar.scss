@@ -119,14 +119,17 @@
     }
 
     &-link {
+      display: inline-block;
       font-weight: 500;
       font-size: 15px;
       line-height: 187%;
       color: #4d4d4d;
-      transition: color ease-in-out 0.14s;
+      transition: color ease-in-out 0.14s, transform ease-in-out 0.14s;
+      will-change: transform, color;
 
       &:hover {
         color: #044b96;
+        transform: translate(4px);
       }
     }
   }
