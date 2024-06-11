@@ -1,0 +1,20 @@
+.admin-main {
+  & .container {
+    display: flex;
+    max-width: 1400px;
+    padding: 0;
+    border-bottom: 2px solid #c0c0c0;
+  }
+
+  &__sidebar {
+    flex: 0 0 382px;
+    height: 200px;
+    box-sizing: border-box;
+    border-right: 2px solid #044b96;
+  }
+
+
+  &__content {
+    flex: 1 1 auto;
+  }
+}
