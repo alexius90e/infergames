@@ -1,0 +1,97 @@
+.admin-header {
+  & .container {
+    display: flex;
+    max-width: 1400px;
+    padding: 0;
+    border-bottom: 2px solid #044b96;
+  }
+
+  &__logo {
+    flex: 0 0 382px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-right: 2px solid #044b96;
+
+    &-link {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #b9b9b9;
+    }
+  }
+
+  &__info {
+    flex: 1 1 auto;
+    display: flex;
+
+    &-block {
+      flex: 1 1 30%;
+      padding: 12px 24px 16px 90px;
+      box-sizing: border-box;
+      border-right: 1px solid #c0c0c0;
+      background-position: bottom 20px left 28px;
+      background-repeat: no-repeat;
+
+      &:last-child {
+        border: none;
+      }
+
+      &_security {
+        flex: 0 0 410px;
+        background-image: url(../assets/security-icon.svg);
+        background-size: 49px;
+      }
+
+      &_clients {
+        background-image: url(../assets/info-icon.svg);
+        background-size: 44px;
+      }
+
+      &_support {
+        background-image: url(../assets/support-icon.svg);
+        background-size: 53px;
+      }
+    }
+
+    &-title {
+      margin: 0 0 6px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 136%;
+      color: #044b96;
+    }
+
+    &-item {
+      display: flex;
+      gap: 18px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 158%;
+      color: #222;
+
+      &-name {
+        flex: 0 0 154px;
+      }
+
+      &-value {
+      }
+    }
+
+    &-list {
+      margin: 0;
+      padding-left: 16px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 158%;
+
+      &-link {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #222;
+      }
+    }
+  }
+}
