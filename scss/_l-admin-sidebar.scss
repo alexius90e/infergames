@@ -26,6 +26,108 @@
       font-weight: 600;
       color: #044b96;
       border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 30px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 147%;
+      color: #222222;
+      border-top: 1px solid #e0e0e0;
+      transition: color ease-in-out 0.14s, background-color ease-in-out 0.14s;
+      will-change: color, background-color;
+
+      &:last-child {
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        transition: filter ease-in-out 0.14s;
+        will-change: filter;
+      }
+
+      &_sections {
+        &::before {
+          background-image: url(../assets/sections-icon.svg);
+        }
+      }
+
+      &_store {
+        &::before {
+          background-image: url(../assets/store-icon.svg);
+        }
+      }
+
+      &_library {
+        &::before {
+          background-image: url(../assets/library-icon.svg);
+        }
+      }
+
+      &_settings {
+        &::before {
+          background-image: url(../assets/settings-icon.svg);
+        }
+      }
+
+      &_secure {
+        &::before {
+          background-image: url(../assets/secure-icon.svg);
+        }
+      }
+
+      &_additions {
+        &::before {
+          background-image: url(../assets/additions-icon.svg);
+        }
+      }
+
+      &.active,
+      &:hover {
+        color: #ffffff;
+        background-color: #044b96;
+
+        &::before {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+
+  &__menu {
+    padding: 12px 30px;
+
+    &-list {
+      margin: 0;
+    }
+
+    &-link {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 187%;
+      color: #4d4d4d;
+      transition: color ease-in-out 0.14s;
+
+      &:hover {
+        color: #044b96;
+      }
     }
   }
 }
