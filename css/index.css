@@ -915,12 +915,37 @@ img {
   padding: 0;
   border-bottom: 2px solid #c0c0c0;
 }
-.admin-main__sidebar {
+.admin-main__aside {
   flex: 0 0 382px;
-  height: 200px;
   box-sizing: border-box;
   border-right: 2px solid #044b96;
 }
 .admin-main__content {
   flex: 1 1 auto;
+}
+
+.admin-sidebar__user {
+  padding: 18px 16px 18px 98px;
+  background: url(../assets/account.svg) left 16px center no-repeat;
+  background-size: 65px;
+  background-color: #f9f9f9;
+}
+.admin-sidebar__user-info {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+}
+.admin-sidebar__user-info-text {
+  color: #222222;
+}
+.admin-sidebar__user-info-value {
+  color: #044b96;
+}
+.admin-sidebar__user-logout {
+  padding: 0;
+  font-size: 15px;
+  line-height: 150%;
+  font-weight: 600;
+  color: #044b96;
+  border: none;
 }

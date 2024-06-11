@@ -1,0 +1,31 @@
+.admin-sidebar {
+  &__user {
+    padding: 18px 16px 18px 98px;
+    background: url(../assets/account.svg) left 16px center no-repeat;
+    background-size: 65px;
+    background-color: #f9f9f9;
+
+    &-info {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 150%;
+
+      &-text {
+        color: #222222;
+      }
+
+      &-value {
+        color: #044b96;
+      }
+    }
+
+    &-logout {
+      padding: 0;
+      font-size: 15px;
+      line-height: 150%;
+      font-weight: 600;
+      color: #044b96;
+      border: none;
+    }
+  }
+}
