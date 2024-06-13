@@ -3,7 +3,8 @@ const customSelects = document.querySelectorAll('.custom-select');
 customSelects.forEach((customSelect) => {
   const selectElem = customSelect.querySelector('select');
   const placeholder = selectElem.getAttribute('placeholder');
-  const options = selectElem.options;
+  // const options = selectElem.options;
+  const options = [...selectElem.options].filter((option) => !option.disabled);
 
   const selectOverlay = document.createElement('div');
   selectOverlay.setAttribute('class', 'select-overlay select-hide');
@@ -13,7 +14,7 @@ customSelects.forEach((customSelect) => {
   selectSelected.innerHTML = `<span>${
     selectElem.options[selectElem.selectedIndex].innerHTML
   }</span>`;
-  
+
   if (placeholder) selectSelected.innerHTML = `<span>${placeholder}</span>`;
 
   const selectItems = document.createElement('div');

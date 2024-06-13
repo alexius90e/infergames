@@ -1,4 +1,6 @@
 import './custom-select.js';
+import './custom-input-datalist.js';
+import './admin.js';
 
 const accordionFeature = document.querySelector('.game-details__info-accordion_feature');
 
