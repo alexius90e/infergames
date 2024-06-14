@@ -282,7 +282,7 @@
                 </fieldset>
               </form>
 
-              <form class="admin-main__content-form active" id="adminInfo">
+              <form class="admin-main__content-form" id="adminInfo">
                 <fieldset class="admin-main__content-fieldset">
                   <label class="admin-main__content-label" for="infoName">Название игры</label>
 
@@ -343,11 +343,54 @@
                 </fieldset>
 
                 <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoExclusive">
+                    Эксклюзивность (Для PlayStation 3)
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="admin-main__content-exclusive">
+                      <div class="admin-main__content-exclusive-radio">
+                        <input
+                          class="admin-main__content-exclusive-input"
+                          type="radio"
+                          id="infoExclusive"
+                          name="infoExclusive"
+                          value="exclusive"
+                        />
+                        <label
+                          class="admin-main__content-exclusive-label admin-main__content-exclusive-label_isexclusive"
+                          for="infoExclusive"
+                        >
+                          Эксклюзив
+                        </label>
+                      </div>
+
+                      <div class="admin-main__content-exclusive-radio">
+                        <input
+                          class="admin-main__content-exclusive-input"
+                          type="radio"
+                          id="infoNotExclusive"
+                          name="infoExclusive"
+                          value="notExclusive"
+                          checked
+                        />
+                        <label
+                          class="admin-main__content-exclusive-label admin-main__content-exclusive-label_notexclusive"
+                          for="infoNotExclusive"
+                        >
+                          Не эксклюзив
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
                   <label class="admin-main__content-label" for="infoCategory">Категория</label>
 
                   <div class="admin-main__content-fieldset-wrapper">
                     <div class="custom-select" data-value="">
-                      <select id="infoCategory">
+                      <select id="infoCategory" name="infoCategory">
                         <option value="" disabled selected>Выберите категорию</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
@@ -678,7 +721,134 @@
                 </fieldset>
               </form>
 
-              <form class="admin-main__content-form" id="adminEquipment">Комплектация</form>
+              <form class="admin-main__content-form active" id="adminEquipment">
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="equipmentBox"
+                    >Тип пластиковой коробки</label
+                  >
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="equipmentBox" name="equipmentBox">
+                        <option value="" disabled selected>Выберите фото</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <div class="admin-main__content-file">
+                      <label class="admin-main__content-file-label">
+                        <input
+                          class="admin-main__content-file-input"
+                          type="file"
+                          id="equipmentBoxFile"
+                          name="equipmentBoxFile"
+                        />
+                        <span class="admin-main__content-file-text">Добавить изображение</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="equipmentContent">
+                    Содержимое издания
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="equipmentContent">
+                        <option value="" disabled selected>Выберите изображениие</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <div class="admin-main__content-file">
+                      <label class="admin-main__content-file-label">
+                        <input
+                          class="admin-main__content-file-input"
+                          type="file"
+                          id="equipmentContentFile"
+                          name="equipmentContentFile"
+                        />
+                        <span class="admin-main__content-file-text">Добавить изображение</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label">
+                    Название изображения пример текста
+                  </label>
+
+                  <figure class="admin-main__content-figure">
+                    <img
+                      class="admin-main__content-figure-image"
+                      src="./assets/cover.jpg"
+                      alt="cover"
+                    />
+                  </figure>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="equipmentComment">
+                    Комментарий к изображению
+                  </label>
+
+                  <div
+                    class="admin-main__content-fieldset-wrapper admin-main__content-fieldset-wrapper_double"
+                  >
+                    <textarea
+                      class="admin-main__content-textarea"
+                      name="equipmentComment"
+                      id="equipmentComment"
+                    ></textarea>
+
+                    <div class="custom-select" data-value="">
+                      <select id="equipmentCommentFile" name="equipmentCommentFile">
+                        <option value="" disabled selected>Выбрать из загруженных</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
 
               <form class="admin-main__content-form" id="adminTech">Технические данные</form>
 

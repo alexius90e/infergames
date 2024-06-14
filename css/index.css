@@ -1058,7 +1058,7 @@ img {
   gap: 10px 8px;
   flex-wrap: wrap;
 }
-.admin-main__content-fieldset-wrapper_double .custom-select, .admin-main__content-fieldset-wrapper_double .admin-main__content-file {
+.admin-main__content-fieldset-wrapper_double .custom-select, .admin-main__content-fieldset-wrapper_double .admin-main__content-file, .admin-main__content-fieldset-wrapper_double .admin-main__content-textarea {
   flex: 0 1 312px;
   max-width: 312px;
   width: 100%;
@@ -1187,6 +1187,51 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.admin-main__content-exclusive {
+  display: flex;
+  gap: 9px;
+}
+.admin-main__content-exclusive-input {
+  display: none;
+}
+.admin-main__content-exclusive-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 38px;
+  padding: 4px 30px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 110%;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #989898;
+  transition: all ease-in-out 0.1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.admin-main__content-exclusive-label::before {
+  content: "";
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+}
+.admin-main__content-exclusive-label_isexclusive::before {
+  background: url(../assets/diamond.svg) center no-repeat;
+}
+.admin-main__content-exclusive-label_notexclusive::before {
+  background: url(../assets/gamepad.svg) center no-repeat;
+}
+.admin-main__content-exclusive-radio:has(.admin-main__content-exclusive-input:checked) .admin-main__content-exclusive-label_isexclusive {
+  background-color: #eb5757;
+}
+.admin-main__content-exclusive-radio:has(.admin-main__content-exclusive-input:checked) .admin-main__content-exclusive-label_notexclusive {
+  background-color: #044b96;
 }
 .admin-main__content .custom-select {
   width: 632px;

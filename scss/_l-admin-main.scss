@@ -73,7 +73,8 @@
 
         &_double {
           & .custom-select,
-          & .admin-main__content-file {
+          & .admin-main__content-file,
+          & .admin-main__content-textarea {
             flex: 0 1 312px;
             max-width: 312px;
             width: 100%;
@@ -223,6 +224,59 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+    }
+
+    &-exclusive {
+      display: flex;
+      gap: 9px;
+
+      &-input {
+        display: none;
+      }
+
+      &-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        min-height: 38px;
+        padding: 4px 30px;
+        box-sizing: border-box;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 110%;
+        color: #fff;
+        border-radius: 7px;
+        background-color: #989898;
+        transition: all ease-in-out 0.1s;
+        user-select: none;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          height: 21px;
+          width: 21px;
+        }
+
+        &_isexclusive::before {
+          background: url(../assets/diamond.svg) center no-repeat;
+        }
+
+        &_notexclusive::before {
+          background: url(../assets/gamepad.svg) center no-repeat;
+        }
+      }
+
+      &-radio:has(.admin-main__content-exclusive-input:checked) &-label {
+        &_isexclusive {
+          background-color: #eb5757;
+        }
+
+        &_notexclusive {
+          background-color: #044b96;
+        }
       }
     }
 
