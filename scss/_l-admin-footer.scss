@@ -1,0 +1,43 @@
+.admin-footer {
+  & .container {
+    display: flex;
+    max-width: 1400px;
+    padding: 0;
+  }
+
+  &__time {
+    flex: 0 0 382px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 34px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    color: #222;
+    border-right: 2px solid #044b96;
+  }
+
+  &__info {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 34px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 157%;
+
+      &-text {
+        color: #222;
+      }
+
+      &-link {
+        color: #044b96;
+      }
+    }
+  }
+}
