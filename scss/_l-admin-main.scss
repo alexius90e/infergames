@@ -116,6 +116,10 @@
       &_date {
         width: 211px;
       }
+
+      &_sm {
+        width: 262px;
+      }
     }
 
     &-textarea {
@@ -129,6 +133,10 @@
       width: 46px;
       padding: 0;
       box-sizing: border-box;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 147%;
+      color: #4d4d4d;
       border: 1px solid #e0e0e0;
       border-radius: 5px;
       background: url(../assets/plus-icon.svg) center no-repeat;
@@ -142,6 +150,19 @@
 
       &:active {
         transform: scale(0.96);
+      }
+
+      &_lg {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 632px;
+        padding: 4px 16px;
+        background-position: center right 16px;
+
+        &:active {
+          transform: scale(0.99);
+        }
       }
     }
 

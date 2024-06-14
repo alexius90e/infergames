@@ -1094,6 +1094,9 @@ img {
 .admin-main__content-input_date {
   width: 211px;
 }
+.admin-main__content-input_sm {
+  width: 262px;
+}
 .admin-main__content-textarea {
   min-height: 90px;
   resize: none;
@@ -1104,6 +1107,10 @@ img {
   width: 46px;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 147%;
+  color: #4d4d4d;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   background: url(../assets/plus-icon.svg) center no-repeat;
@@ -1116,6 +1123,17 @@ img {
 }
 .admin-main__content-add-button:active {
   transform: scale(0.96);
+}
+.admin-main__content-add-button_lg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 632px;
+  padding: 4px 16px;
+  background-position: center right 16px;
+}
+.admin-main__content-add-button_lg:active {
+  transform: scale(0.99);
 }
 .admin-main__content-checkbox_lg {
   flex: 1 0 100%;

@@ -164,7 +164,7 @@
             </nav>
 
             <div class="admin-main__content-wrapper">
-              <form class="admin-main__content-form" id="adminSeo">
+              <form class="admin-main__content-form active" id="adminSeo">
                 <fieldset class="admin-main__content-fieldset">
                   <label class="admin-main__content-label" for="seoTitle">Title страницы</label>
 
@@ -721,7 +721,7 @@
                 </fieldset>
               </form>
 
-              <form class="admin-main__content-form active" id="adminEquipment">
+              <form class="admin-main__content-form" id="adminEquipment">
                 <fieldset class="admin-main__content-fieldset">
                   <label class="admin-main__content-label" for="equipmentBox"
                     >Тип пластиковой коробки</label
@@ -850,7 +850,256 @@
                 </fieldset>
               </form>
 
-              <form class="admin-main__content-form" id="adminTech">Технические данные</form>
+              <form class="admin-main__content-form" id="adminTech">
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techCode">
+                    Напишите штрих код
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="techCodeLocation" name="techCodeLocation">
+                        <option value="1">На обложке</option>
+                        <option value="2">На обложке</option>
+                        <option value="3">На обложке</option>
+                        <option value="4">На обложке</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <input
+                      class="admin-main__content-input admin-main__content-input_sm"
+                      type="text"
+                      id="techCode"
+                      name="techCode"
+                      placeholder="Штрих код"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techIndex"> Введите индекс </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-input-datalist">
+                      <input
+                        class="custom-input-datalist__input"
+                        id="techIndex"
+                        name="techIndex"
+                        placeholder="Напишите или выберите из списка"
+                        autocomplete="off"
+                        list=""
+                      />
+
+                      <datalist class="custom-input-datalist__datalist">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                      </datalist>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techMediumName">
+                    Название носителя,на котором написана игра
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="techMediumName" name="techMediumName">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techVersion">
+                    Версия игры, которая записана на диске
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techVersion"
+                      name="techVersion"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techSidCode">
+                    SID код матрицы диска с игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techSidCode"
+                      name="techSidCode"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techMasterCode">
+                    Мастер код, выжженный лазером на диске с игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techMasterCode"
+                      name="techMasterCode"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <button
+                      class="admin-main__content-add-button admin-main__content-add-button_lg"
+                    >
+                      Дополнительный мастер код
+                    </button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techStamp">
+                    Инструментальный штамп или мастер код (выжженный / проштампованный) на диске с
+                    игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techStamp"
+                      name="techStamp"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <button
+                      class="admin-main__content-add-button admin-main__content-add-button_lg"
+                    >
+                      Дополнительный инструментальный штамп
+                    </button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techSidPress">
+                    SID пресс-формы диске с игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techSidPress"
+                      name="techSidPress"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <button
+                      class="admin-main__content-add-button admin-main__content-add-button_lg"
+                    >
+                      Дополнительный SID пресс-формы
+                    </button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techAddField">
+                    Добавить поле
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techAddField"
+                      name="techAddField"
+                      placeholder="Название"
+                    />
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
 
               <div class="admin-main__content-buttons">
                 <button class="admin-main__content-buttons-save">Сохранить</button>
