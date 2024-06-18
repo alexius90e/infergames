@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infergames</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="admin-header">
+      <div class="container">
+        <div class="admin-header__logo">
+          <a href="./" class="admin-header__logo-link">Логотип</a>
+        </div>
+
+        <div class="admin-header__info">
+          <div class="admin-header__info-block admin-header__info-block_security">
+            <h5 class="admin-header__info-title">Безопасность</h5>
+            <div class="admin-header__info-item">
+              <span class="admin-header__info-item-name">Ваш IP: </span>
+              <span class="admin-header__info-item-value">62.118.139.37 </span>
+            </div>
+
+            <div class="admin-header__info-item">
+              <span class="admin-header__info-item-name">IP последнего захода:</span>
+              <span class="admin-header__info-item-value">62.118.139.8.</span>
+            </div>
+
+            <div class="admin-header__info-item">
+              <span class="admin-header__info-item-name">Дата последнего захода:</span>
+              <span class="admin-header__info-item-value">08:42, 16 мая 2024 г.</span>
+            </div>
+          </div>
+
+          <div class="admin-header__info-block admin-header__info-block_clients">
+            <h5 class="admin-header__info-title">Информация для клиентов</h5>
+          </div>
+
+          <div class="admin-header__info-block admin-header__info-block_support">
+            <h5 class="admin-header__info-title">Поддержка клиентов</h5>
+            <ul class="admin-header__info-list">
+              <li>
+                <a class="admin-header__info-list-link" href="#">Задать вопрос on-line</a> <br />
+                (Пн-Пт с 10.00 до 19.00)
+              </li>
+              <li>
+                <a class="admin-header__info-list-link" href="#">Обратиться в техподдержку</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="admin-main">
+        <div class="container">
+          <aside class="admin-main__aside">
+            <div class="admin-sidebar">
+              <div class="admin-sidebar__user">
+                <div class="admin-sidebar__user-info">
+                  <span class="admin-sidebar__user-info-text">Пользователь: </span>
+                  <span class="admin-sidebar__user-info-value">1234</span>
+                </div>
+                <div class="admin-sidebar__user-info">
+                  <span class="admin-sidebar__user-info-text">Версия: </span>
+                  <span class="admin-sidebar__user-info-value">v4.1.3</span>
+                </div>
+                <button class="admin-sidebar__user-logout">Выйти из системы</button>
+              </div>
+
+              <nav class="admin-sidebar__nav">
+                <a class="admin-sidebar__nav-link admin-sidebar__nav-link_sections" href="#">
+                  Разделы сайта
+                </a>
+                <a class="admin-sidebar__nav-link admin-sidebar__nav-link_store active" href="#">
+                  Интернет - магазин
+                </a>
+                <a class="admin-sidebar__nav-link admin-sidebar__nav-link_library" href="#">
+                  Игротека
+                </a>
+                <a class="admin-sidebar__nav-link admin-sidebar__nav-link_settings" href="#">
+                  Настройки
+                </a>
+                <a class="admin-sidebar__nav-link admin-sidebar__nav-link_secure" href="#">
+                  Безопасность
+                </a>
+                <a class="admin-sidebar__nav-link admin-sidebar__nav-link_additions" href="#">
+                  Дополнительные модули
+                </a>
+              </nav>
+
+              <nav class="admin-sidebar__menu">
+                <ul class="admin-sidebar__menu-list">
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Публикации</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">SEO</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Новости</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Опросы</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Слайдеры</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Фотогалерея</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Регистрация</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Группы пользователей</a>
+                  </li>
+                  <li class="admin-sidebar__menu-list-item">
+                    <a class="admin-sidebar__menu-link" href="#">Файловый менеджер</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+
+          <article class="admin-main__content">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-item-link" href="#">Игротека</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-item-link" href="#">Название компании</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-item-link" href="#">Название консоли</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-item-link" href="#">Регион</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-item-link" href="#">Название игры</a>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="admin-main__content-nav">
+              <button class="admin-main__content-nav-button active" data-target="adminSeo">
+                SEO
+              </button>
+              <button class="admin-main__content-nav-button" data-target="adminInfo">
+                Информационный блок
+              </button>
+              <button class="admin-main__content-nav-button" data-target="adminEquipment">
+                Комплектация
+              </button>
+              <button class="admin-main__content-nav-button" data-target="adminTech">
+                Технические данные
+              </button>
+            </nav>
+
+            <div class="admin-main__content-wrapper">
+              <form class="admin-main__content-form active" id="adminSeo">
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="seoTitle">Title страницы</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="seoTitle"
+                      name="seoTitle"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="seoDescription">
+                    МЕТА-описание (meta_description)
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <textarea
+                      class="admin-main__content-textarea"
+                      name="seoDescription"
+                      id="seoDescription"
+                    ></textarea>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="seoDescription2">
+                    МЕТА-описание (meta_description)
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <textarea
+                      class="admin-main__content-textarea"
+                      name="seoDescription2"
+                      id="seoDescription2"
+                    ></textarea>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="seoUrl">URL страницы</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input class="admin-main__content-input" type="url" id="seoUrl" name="seoUrl" />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label">Атрибуты</label>
+
+                  <div class="admin-main__content-checkbox">
+                    <input
+                      class="admin-main__content-checkbox-input"
+                      type="checkbox"
+                      id="seoAttributeDisabled"
+                      name="seoAttributeDisabled"
+                      checked
+                    />
+                    <label class="admin-main__content-checkbox-label" for="seoAttributeDisabled">
+                      Отключен
+                    </label>
+                  </div>
+
+                  <div class="admin-main__content-checkbox">
+                    <input
+                      class="admin-main__content-checkbox-input"
+                      type="checkbox"
+                      id="seoAttributeHidden"
+                      name="seoAttributeHidden"
+                    />
+                    <label class="admin-main__content-checkbox-label" for="seoAttributeHidden">
+                      Скрытый
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <figure class="admin-main__content-figure">
+                    <img
+                      class="admin-main__content-figure-image"
+                      src="./assets/cover.jpg"
+                      alt="cover"
+                    />
+                  </figure>
+                </fieldset>
+              </form>
+
+              <form class="admin-main__content-form" id="adminInfo">
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoName">Название игры</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-input-datalist">
+                      <input
+                        class="custom-input-datalist__input"
+                        id="infoName"
+                        placeholder="Введите название или выберите из списка"
+                        autocomplete="off"
+                        list=""
+                      />
+
+                      <datalist class="custom-input-datalist__datalist">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                      </datalist>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoFeature"
+                    >Особенность издания</label
+                  >
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-input-datalist">
+                      <input
+                        class="custom-input-datalist__input"
+                        id="infoFeature"
+                        placeholder="Введите или выберите из списка"
+                        autocomplete="off"
+                        list=""
+                      />
+
+                      <datalist class="custom-input-datalist__datalist">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                      </datalist>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoExclusive">
+                    Эксклюзивность (Для PlayStation 3)
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="admin-main__content-exclusive">
+                      <div class="admin-main__content-exclusive-radio">
+                        <input
+                          class="admin-main__content-exclusive-input"
+                          type="radio"
+                          id="infoExclusive"
+                          name="infoExclusive"
+                          value="exclusive"
+                        />
+                        <label
+                          class="admin-main__content-exclusive-label admin-main__content-exclusive-label_isexclusive"
+                          for="infoExclusive"
+                        >
+                          Эксклюзив
+                        </label>
+                      </div>
+
+                      <div class="admin-main__content-exclusive-radio">
+                        <input
+                          class="admin-main__content-exclusive-input"
+                          type="radio"
+                          id="infoNotExclusive"
+                          name="infoExclusive"
+                          value="notExclusive"
+                          checked
+                        />
+                        <label
+                          class="admin-main__content-exclusive-label admin-main__content-exclusive-label_notexclusive"
+                          for="infoNotExclusive"
+                        >
+                          Не эксклюзив
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoCategory">Категория</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoCategory" name="infoCategory">
+                        <option value="" disabled selected>Выберите категорию</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoReleaseDate">Дата релиза</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input admin-main__content-input_date"
+                      type="date"
+                      id="infoReleaseDate"
+                      name="infoReleaseDate"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoRegion">
+                    Маркировка региона, в котором вышло издание
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-input-datalist">
+                      <input
+                        class="custom-input-datalist__input"
+                        id="infoRegion"
+                        placeholder="Введите или выберите из списка"
+                        autocomplete="off"
+                        list=""
+                      />
+
+                      <datalist class="custom-input-datalist__datalist">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                      </datalist>
+                    </div>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoCountry">
+                    Страна, в которой распространялась игра
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoCountry" name="infoCountry">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoGenre">Жанр игры</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoGenre" name="infoGenre">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoDeveloper">Разработчик</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoDeveloper" name="infoDeveloper">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoPublisher">Издатель</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoPublisher" name="infoPublisher">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoDistributor"
+                    >Дистрибьютор</label
+                  >
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoDistributor" name="infoDistributor">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoTranslation"
+                    >Перевод текста</label
+                  >
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoTranslation" name="infoTranslation">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <div class="admin-main__content-checkbox admin-main__content-checkbox_lg">
+                      <input
+                        class="admin-main__content-checkbox-input"
+                        type="checkbox"
+                        id="infoNoTranslation"
+                        name="infoNoTranslation"
+                      />
+                      <label class="admin-main__content-checkbox-label" for="infoNoTranslation">
+                        Нет перевода
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoSpeech">Озвучка речи</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="infoSpeech" name="infoSpeech">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <div class="admin-main__content-checkbox admin-main__content-checkbox_lg">
+                      <input
+                        class="admin-main__content-checkbox-input"
+                        type="checkbox"
+                        id="infoNoSpeech"
+                        name="infoNoSpeech"
+                      />
+                      <label class="admin-main__content-checkbox-label" for="infoNoSpeech">
+                        Нет озвучки
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoDescription">Описание</label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <textarea
+                      class="admin-main__content-textarea"
+                      name="infoDescription"
+                      id="infoDescription"
+                      placeholder="Введите описание"
+                    ></textarea>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="infoSpeech">Детали</label>
+
+                  <div
+                    class="admin-main__content-fieldset-wrapper admin-main__content-fieldset-wrapper_double"
+                  >
+                    <div class="admin-main__content-file">
+                      <label class="admin-main__content-file-label">
+                        <input
+                          class="admin-main__content-file-input"
+                          type="file"
+                          id="infoDetailsFile"
+                          name="infoDetailsFile"
+                        />
+                        <span class="admin-main__content-file-text">Добавить изображение</span>
+                      </label>
+                    </div>
+
+                    <div class="custom-select" data-value="">
+                      <select id="infoDetailsSelect" name="infoDetailsSelect">
+                        <option value="" disabled selected>Выбрать из загруженных</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+
+              <form class="admin-main__content-form" id="adminEquipment">
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="equipmentBox"
+                    >Тип пластиковой коробки</label
+                  >
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="equipmentBox" name="equipmentBox">
+                        <option value="" disabled selected>Выберите фото</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <div class="admin-main__content-file">
+                      <label class="admin-main__content-file-label">
+                        <input
+                          class="admin-main__content-file-input"
+                          type="file"
+                          id="equipmentBoxFile"
+                          name="equipmentBoxFile"
+                        />
+                        <span class="admin-main__content-file-text">Добавить изображение</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="equipmentContent">
+                    Содержимое издания
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="equipmentContent">
+                        <option value="" disabled selected>Выберите изображениие</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <div class="admin-main__content-file">
+                      <label class="admin-main__content-file-label">
+                        <input
+                          class="admin-main__content-file-input"
+                          type="file"
+                          id="equipmentContentFile"
+                          name="equipmentContentFile"
+                        />
+                        <span class="admin-main__content-file-text">Добавить изображение</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label">
+                    Название изображения пример текста
+                  </label>
+
+                  <figure class="admin-main__content-figure">
+                    <img
+                      class="admin-main__content-figure-image"
+                      src="./assets/cover.jpg"
+                      alt="cover"
+                    />
+                  </figure>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="equipmentComment">
+                    Комментарий к изображению
+                  </label>
+
+                  <div
+                    class="admin-main__content-fieldset-wrapper admin-main__content-fieldset-wrapper_double"
+                  >
+                    <textarea
+                      class="admin-main__content-textarea"
+                      name="equipmentComment"
+                      id="equipmentComment"
+                    ></textarea>
+
+                    <div class="custom-select" data-value="">
+                      <select id="equipmentCommentFile" name="equipmentCommentFile">
+                        <option value="" disabled selected>Выбрать из загруженных</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+
+              <form class="admin-main__content-form" id="adminTech">
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techCode">
+                    Напишите штрих код
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="techCodeLocation" name="techCodeLocation">
+                        <option value="1">На обложке</option>
+                        <option value="2">На обложке</option>
+                        <option value="3">На обложке</option>
+                        <option value="4">На обложке</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <input
+                      class="admin-main__content-input admin-main__content-input_sm"
+                      type="text"
+                      id="techCode"
+                      name="techCode"
+                      placeholder="Штрих код"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techIndex"> Введите индекс </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-input-datalist">
+                      <input
+                        class="custom-input-datalist__input"
+                        id="techIndex"
+                        name="techIndex"
+                        placeholder="Напишите или выберите из списка"
+                        autocomplete="off"
+                        list=""
+                      />
+
+                      <datalist class="custom-input-datalist__datalist">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                      </datalist>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techMediumName">
+                    Название носителя,на котором написана игра
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <div class="custom-select" data-value="">
+                      <select id="techMediumName" name="techMediumName">
+                        <option value="" disabled selected>Выберите из списка</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                      </select>
+                    </div>
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techVersion">
+                    Версия игры, которая записана на диске
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techVersion"
+                      name="techVersion"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techSidCode">
+                    SID код матрицы диска с игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techSidCode"
+                      name="techSidCode"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techMasterCode">
+                    Мастер код, выжженный лазером на диске с игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techMasterCode"
+                      name="techMasterCode"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <button
+                      class="admin-main__content-add-button admin-main__content-add-button_lg"
+                    >
+                      Дополнительный мастер код
+                    </button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techStamp">
+                    Инструментальный штамп или мастер код (выжженный / проштампованный) на диске с
+                    игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techStamp"
+                      name="techStamp"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <button
+                      class="admin-main__content-add-button admin-main__content-add-button_lg"
+                    >
+                      Дополнительный инструментальный штамп
+                    </button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techSidPress">
+                    SID пресс-формы диске с игрой
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techSidPress"
+                      name="techSidPress"
+                    />
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+
+                    <button
+                      class="admin-main__content-add-button admin-main__content-add-button_lg"
+                    >
+                      Дополнительный SID пресс-формы
+                    </button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="admin-main__content-fieldset">
+                  <label class="admin-main__content-label" for="techAddField">
+                    Добавить поле
+                  </label>
+
+                  <div class="admin-main__content-fieldset-wrapper">
+                    <input
+                      class="admin-main__content-input"
+                      type="text"
+                      id="techAddField"
+                      name="techAddField"
+                      placeholder="Название"
+                    />
+
+                    <button class="admin-main__content-add-button"></button>
+
+                    <div class="admin-main__content-info">
+                      <span class="admin-main__content-info-text">
+                        Это тестовый контент, который не должен нести никакого смысла, лишь показать
+                        наличие самого текста
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+
+              <div class="admin-main__content-buttons">
+                <button class="admin-main__content-buttons-save">Сохранить</button>
+                <button class="admin-main__content-buttons-cancel">Отменить</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="admin-footer">
+      <div class="container">
+        <div class="admin-footer__time">
+          <span class="admin-footer__time-text">Время работы:</span>
+          <span class="admin-footer__time-value">Пн-Пт с 10:00 до 19:00</span>
+        </div>
+
+        <div class="admin-footer__info">
+          <div class="admin-footer__info-item">
+            <span class="admin-footer__info-item-text">Для Москвы:</span>
+            <a class="admin-footer__info-item-link" href="tel:4955802137">(495) 580 21 37 </a>
+          </div>
+
+          <div class="admin-footer__info-item">
+            <span class="admin-footer__info-item-text">Для регионов России и мобильных:</span>
+            <a class="admin-footer__info-item-link" href="tel:88001003153">8 (800) 100 31 53 </a>
+          </div>
+
+          <div class="admin-footer__info-item">
+            <span class="admin-footer__info-item-text">Служба технической поержки</span>
+            <a class="admin-footer__info-item-link" href="mailto:supprt@primer.ru">
+              supprt@primer.ru
+            </a>
+          </div>
+
+          <div class="admin-footer__info-item">
+            <span class="admin-footer__info-item-text">Отдел продаж</span>
+            <a class="admin-footer__info-item-link" href="mailto:123456@primer.ru">
+              123456@primer.ru
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__body">
+        <h2 class="modal__title">Заполнить пустое поле</h2>
+        <p class="modal__text">
+          Ознакомьтесь с правилами заполнения данных для игр из игротеки. В случае нарушения правил,
+          возможна блокировка пользователя.
+        </p>
+
+        <div class="modal__texteditor">
+          <label class="modal__texteditor-label">
+            <span class="modal__texteditor-label-text">Текстовый редактор</span>
+            <textarea
+              class="modal__texteditor-textarea"
+              name="texteditor"
+              id="texteditor"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+        </div>
+
+        <div class="modal__buttons">
+          <button class="modal__button modal__button_dark">Заполнить поле</button>
+          <button class="modal__button modal__button_light">Отменить</button>
+          <button class="modal__close"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  &__body {
+    position: relative;
+    max-width: 640px;
+    padding: 54px 70px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    &_error {
+      padding: 80px 40px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 26px;
+
+    font-size: 30px;
+    text-align: center;
+
+    &_error {
+      font-weight: 500;
+      color: #dd4747;
+    }
+  }
+
+  &__text {
+    margin: 0 0 28px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 153%;
+    text-align: center;
+    color: #222;
+  }
+
+  &__texteditor {
+    &-label {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      &-text {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 147%;
+        color: #222;
+      }
+    }
+
+    &-textarea {
+      display: inline-block;
+      min-height: 120px;
+      width: 100%;
+      padding: 10px 16px;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 147%;
+      color: #4d4d4d;
+      outline-color: #044b96;
+      border: 1px solid #e0e0e0;
+      background: #f9f9f9;
+      resize: none;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 28px 0 0;
+  }
+
+  &__button {
+    min-width: 170px;
+    padding: 9px 20px 12px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: center;
+    border: 1px solid #044b96;
+    border-radius: 5px;
+    transition: all ease-in-out 0.1s;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.96);
+    }
+
+    &_dark {
+      color: #fff;
+      background-color: #044b96;
+
+      &:hover {
+        background-color: #033d7b;
+      }
+    }
+
+    &_light {
+      color: #044b96;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #f0f7ff;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: url(../assets/close.svg) center no-repeat;
+  }
+}
